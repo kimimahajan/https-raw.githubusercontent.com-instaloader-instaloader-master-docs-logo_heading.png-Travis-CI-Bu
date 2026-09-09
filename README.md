@@ -64,41 +64,33 @@
 `Instaloader Documentation <https://instaloader.github.io/>`__
 
 
-How to Automatically Download Pictures from Instagram
+How to Automatically Download Pictures and Videos from Instagram
 -----------------------------------------------------
 
-To **download all pictures and videos of a profile**, as well as the
-**profile picture**, do
+To **download all pictures and videos from a profile**, as well as the
+**profile picture**, run:
 
 ::
 
     instaloader profile [profile ...]
 
-where ``profile`` is the name of a profile you want to download. Instead
-of only one profile, you may also specify a list of profiles.
+where ``profile`` is the name of a profile you want to download. Instead of specifying only one profile, you can also specify a list of profiles.
 
-To later **update your local copy** of that profiles, you may run
+To later **update your local copies** of those profiles, you can run:
 
 ::
 
     instaloader --fast-update profile [profile ...]
 
-If ``--fast-update`` is given, Instaloader stops when arriving at the
-first already-downloaded picture. When updating profiles, Instaloader
-automatically **detects profile name changes** and renames the target directory
-accordingly.
+If ``--fast-update`` is specified, Instaloader stops when it reaches the first picture that has already been downloaded. When updating profiles, Instaloader automatically detects profile name changes and renames the target directory accordingly.
 
-Instaloader can also be used to **download private profiles**. To do so,
-invoke it with
+Instaloader can also **download private profiles**. To do so, run it with:
 
 ::
 
     instaloader --login=your_username profile [profile ...]
 
-When logging in, Instaloader **stores the session cookies** in a file in your
-temporary directory, which will be reused later the next time ``--login``
-is given.  So you can download private profiles **non-interactively** when you
-already have a valid session cookie file.
+When you log in, Instaloader **stores the session cookies** in a file in your temporary directory, which are reused the next time ``--login`` is specified. This allows you to download private profiles non-interactively when you already have a valid session cookie file.
 
 `Instaloader Documentation <https://instaloader.github.io/basic-usage.html>`__
 
